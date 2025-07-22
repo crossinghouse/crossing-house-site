@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import CustomPlayer from '../components/CustomPlayer'
+// import Navbar from '../components/Navbar'
+// import CustomPlayer from '../components/CustomPlayer'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Crossing House Record Label" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-1 p-8">
         <h1 className="text-6xl font-bold mb-12 font-sans">Crossing House</h1>
         <p className="text-lg max-w-xl leading-relaxed">
@@ -18,7 +18,7 @@ export default function Home() {
           Based in Australia and connecting with global underground communities.
         </p>
         <div className="mt-16">
-          <CustomPlayer />
+          {/* <CustomPlayer /> */}
         </div>
       </main>
     </div>
