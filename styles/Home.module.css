@@ -1,0 +1,19 @@
+
+.container {
+  padding: 4rem;
+  font-family: Helvetica, sans-serif;
+}
+.title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.menu a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.about {
+  margin-top: 2rem;
+  max-width: 600px;
+}

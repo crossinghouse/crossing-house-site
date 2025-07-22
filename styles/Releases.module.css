@@ -1,0 +1,27 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.cover {
+  position: relative;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tile:hover .overlay {
+  opacity: 1;
+}
