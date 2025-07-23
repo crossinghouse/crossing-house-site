@@ -1,19 +1,68 @@
-
-.container {
-  padding: 4rem;
+.main {
   font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
 .title {
-  font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 140px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 20px;
 }
-.menu a {
-  margin-right: 1.5rem;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+
+.nav {
+  position: absolute;
+  left: 30px;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 23px;
+  color: #333;
 }
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.logoWrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+}
+
 .about {
-  margin-top: 2rem;
-  max-width: 600px;
+  padding: 80px 100px;
+  font-size: 28px;
+  text-align: justify;
+  color: black;
+}
+
+.mailingList {
+  padding: 60px 100px;
+  text-align: left;
+}
+
+.mailingList input {
+  padding: 10px;
+  font-size: 18px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.mailingList button {
+  padding: 10px 20px;
+  font-size: 18px;
 }
