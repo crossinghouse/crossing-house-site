@@ -4,34 +4,34 @@ import styles from '../styles/releases.module.css';
 
 const releases = [
   {
-    id: 'ch005',
-    artist: 'Jonah Gabriel',
-    title: 'Modular Works',
-    image: '/artwork/ch005.jpg', // Add this image to /public/artwork
-  },
-  {
-    id: 'ch004',
-    artist: 'Damian Carl & The Quaaludes',
-    title: 'Live from the Quarter',
-    image: '/artwork/ch004.jpg', // Add this image to /public/artwork
-  },
-  {
-    id: 'ch003',
-    artist: 'RobLFO',
-    title: 'Underpass',
-    image: '/artwork/ch003.jpg',
-  },
-  {
-    id: 'ch002',
-    artist: 'Sikluh',
-    title: 'Foam Folder',
-    image: '/artwork/ch002.jpg',
-  },
-  {
-    id: 'ch001',
-    artist: 'Jonah Gabriel',
-    title: 'Garden Pieces',
+    id: '001',
+    artist: 'EIS',
+    title: 'EIS',
     image: '/artwork/ch001.jpg',
+  },
+  {
+    id: '007',
+    artist: 'SHOCK CORRIDOR',
+    title: 'Drag Nets',
+    image: '/artwork/ch007.jpg',
+  },
+  {
+    id: '008',
+    artist: 'ZACHARY LEWIS',
+    title: 'Zachary Lewis',
+    image: '/artwork/ch008.png',
+  },
+  {
+    id: '009',
+    artist: 'THE DAILY COMMUTERS',
+    title: 'QUANTIFY/MUNCHKIN',
+    image: '/artwork/ch009.jpg',
+  },
+  {
+    id: '006',
+    artist: 'DAMIAN CARL',
+    title: 'Space Junk Stones Throw',
+    image: '/artwork/ch006.jpg',
   },
 ];
 
@@ -44,8 +44,11 @@ export default function Releases() {
           <a key={release.id} href={`/releases/${release.id}`} className={styles.releaseItem}>
             <img src={release.image} alt={release.title} className={styles.artwork} />
             <div className={styles.text}>
-              <h3>{release.artist}</h3>
-              <p>{release.title}</p>
+              <div className={styles.textRow}>
+                <h3 className={styles.artist}>{release.artist}</h3>
+                <span className={styles.catalogue}>{release.id.toUpperCase()}</span>
+              </div>
+              <p className={styles.title}>{release.title}</p>
             </div>
           </a>
         ))}

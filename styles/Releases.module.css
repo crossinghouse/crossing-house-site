@@ -1,35 +1,53 @@
 .container {
-  padding: 60px;
-  font-family: Helvetica, sans-serif;
-}
-
-.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px; /* row-gap, column-gap */
+  padding: 40px 60px;
 }
 
-.tile {
-  position: relative;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.85);
+.releaseItem {
+  text-decoration: none;
   color: black;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 20px;
 }
 
-.tile:hover .overlay {
-  opacity: 1;
+.artwork {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 4px; /* Tighter gap below image */
 }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Tighter overall spacing */
+}
+
+.textRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1px;
+}
+
+.artist {
+  font-size: 25px; /* Slightly reduced */
+  font-weight: normal;
+  margin: 0;
+}
+
+.catalogue {
+  font-size: 25px; /* Bigger, closer to artist */
+  color: #333;
+}
+
+.title {
+  font-size: 25px; /* Match catalogue */
+  margin: 0;
+}
+
+.artist, .catalogue, .title {
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+}
+

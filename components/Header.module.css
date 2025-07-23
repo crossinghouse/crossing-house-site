@@ -1,23 +1,28 @@
-.header {
-  position: fixed;
-  top: 50%;
-  left: 40px;
-  transform: translateY(-50%);
+.container {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* reduced from 32px */
   font-family: Helvetica, sans-serif;
-  font-size: 23px;
-  color: #333;
-  z-index: 10;
 }
 
-.header a {
+.logo {
+  font-size: 24px;
   text-decoration: none;
-  color: #333;
-  transition: opacity 0.2s ease;
+  color: black;
 }
 
-.header a:hover {
-  opacity: 0.6;
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px; /* match logo size */
+}
+
+.active {
+  color: grey;
 }
